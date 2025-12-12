@@ -21,7 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
   fullWidth = false,
 }) => {
   const baseClasses =
-    "px-4 py-2 rounded font-semibold transition-all duration-300 hover:shadow-md disabled:opacity-60 disabled:cursor-not-allowed flex items-center gap-2";
+    "px-4 py-3 rounded-[15px] font-bold transition-all duration-300 hover:shadow-md disabled:opacity-60 disabled:cursor-not-allowed flex items-center gap-2";
 
   const variantClasses = {
     primary: "bg-green-500 text-white hover:bg-green-600",

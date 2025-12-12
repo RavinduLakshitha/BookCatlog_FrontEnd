@@ -60,7 +60,7 @@ export const BookCatalogPage: React.FC = () => {
       <div className="py-6 text-white shadow-md bg-fuchsia-50">
         <div className="px-4 mx-auto">
           <div className="flex items-center justify-between">
-            <h1 className="pl-6 text-3xl font-bold text-blue-800">Book Catalog</h1>
+            <h1 className="pl-6 mb-5 text-5xl font-bold text-gray-700">Book Catalog</h1>
             <Button
               label="Add Book"
               onClick={handleAddBook}

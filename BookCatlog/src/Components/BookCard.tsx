@@ -27,27 +27,21 @@ export const BookCard: React.FC<BookCardProps> = ({
         <span><strong>Price:</strong> ${book.price.toFixed(2)}</span>
         <span><strong>Stock:</strong> {book.quantity}</span>
       </div>
-      <div className="flex items-stretch gap-3 mt-auto">
-        <div className="flex-1">
-          <Button
-            label="Update"
-            onClick={() => onUpdate(book.id)}
-            variant="secondary"
-            disabled={isDeleting}
-            icon={<MdEdit size={18} />}
-            fullWidth
-          />
-        </div>
-        <div className="flex-1">
-          <Button
-            label="Delete"
-            onClick={() => onDelete(book.id)}
-            variant="danger"
-            disabled={isDeleting}
-            icon={<MdDelete size={18} />}
-            fullWidth
-          />
-        </div>
+      <div className="flex items-center justify-center gap-20 mask-t-from-90% to-100% mt-auto pt-4 border-t">
+        <Button
+          label="Update"
+          onClick={() => onUpdate(book.id)}
+          variant="secondary"
+          disabled={isDeleting}
+          icon={<MdEdit size={18} />}
+        />
+        <Button
+          label="Delete"
+          onClick={() => onDelete(book.id)}
+          variant="danger"
+          disabled={isDeleting}
+          icon={<MdDelete size={18} />}
+        />
       </div>
     </div>
   );
