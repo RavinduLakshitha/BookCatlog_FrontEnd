@@ -205,7 +205,7 @@ export const BookModal: React.FC<BookModalProps> = ({ isOpen, onClose, book }) =
             <button
               type="button"
               onClick={handleClose}
-              className="flex-1 px-4 py-2 font-semibold text-white transition-colors duration-300 bg-gray-500 rounded hover:bg-gray-600"
+              className="flex-1 px-4 py-2 font-semibold text-white transition-colors duration-300 bg-gray-500 rounded-[15px] hover:bg-gray-600"
               disabled={isLoading}
             >
               Cancel
