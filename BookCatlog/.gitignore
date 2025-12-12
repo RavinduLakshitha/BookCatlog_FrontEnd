@@ -33,6 +33,17 @@ dist-ssr
 .env.local
 .env.*.local
 
+# Test output
+coverage/
+junit.xml
+test-results.xml
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Jest cache
+.jest/
+
 # Cache
 .cache
 .temp
