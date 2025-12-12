@@ -7,12 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+*.pnp
+*.pnp.js
+
+# Production build
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# IDE and Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -23,31 +28,16 @@ dist-ssr
 *.sln
 *.sw?
 
-###########################################
-# Dependencies and Build Output
-###########################################
-/node_modules
-/dist
-.vitepress/cache
+# Environment
+.env
+.env.local
+.env.*.local
 
-###########################################
-# Logs and Caches
-###########################################
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-pnpm-lock.yaml
+# Cache
 .cache
 .temp
-
-###########################################
-# IDE and Editor Configuration
-###########################################
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
+.eslintcache
+.vitepress/cache
 *.user
 
 ###########################################
